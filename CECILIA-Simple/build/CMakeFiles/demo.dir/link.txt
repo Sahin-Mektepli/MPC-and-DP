@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -O3 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/demo.dir/apps/demo/proxy.cpp.o CMakeFiles/demo.dir/utils/parse_options.cpp.o -o demo  dependencies/cryptopp-cmake/cryptopp/libcryptopp.a 
