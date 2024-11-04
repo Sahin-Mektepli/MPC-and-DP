@@ -1,0 +1,63 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"dependencies/eigen/lapack/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 107,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"dependencies/eigen/lapack/libeigen_lapack_static.a"
+			],
+			"targetId" : "eigen_lapack_static::@c313633969684dcf31da",
+			"targetIndex" : 638,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"dependencies/eigen/lapack/libeigen_lapack.dylib"
+			],
+			"targetId" : "eigen_lapack::@c313633969684dcf31da",
+			"targetIndex" : 637,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "dependencies/eigen/lapack",
+		"source" : "dependencies/eigen/lapack"
+	}
+}

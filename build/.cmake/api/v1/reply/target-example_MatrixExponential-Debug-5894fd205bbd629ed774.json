@@ -1,0 +1,131 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "dependencies/eigen/unsupported/doc/examples/example_MatrixExponential"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"dependencies/eigen/unsupported/doc/examples/CMakeLists.txt",
+			"dependencies/eigen/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 421,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi -O3 -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen/unsupported/doc/examples/../../../unsupported"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen/unsupported/doc/examples/../../../unsupported/test"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "example_MatrixExponential::@dfff277dd3f896603273",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi -O3",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "example_MatrixExponential",
+	"nameOnDisk" : "example_MatrixExponential",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen/unsupported/doc/examples",
+		"source" : "dependencies/eigen/unsupported/doc/examples"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/eigen/unsupported/doc/examples/MatrixExponential.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

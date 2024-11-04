@@ -1,0 +1,59 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"dependencies/eigen/blas/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "eigen_blas_static::@dc523f36de505374085a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "eigen_blas::@dc523f36de505374085a"
+		}
+	],
+	"id" : "blas::@dc523f36de505374085a",
+	"name" : "blas",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen/blas",
+		"source" : "dependencies/eigen/blas"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

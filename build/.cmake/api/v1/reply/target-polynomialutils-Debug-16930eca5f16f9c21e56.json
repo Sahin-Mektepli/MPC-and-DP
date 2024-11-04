@@ -1,0 +1,127 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ei_add_test",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"dependencies/eigen/cmake/EigenTesting.cmake",
+			"dependencies/eigen/unsupported/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "polynomialutils_2::@b525354665848655c0dd"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "polynomialutils_3::@b525354665848655c0dd"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "polynomialutils_4::@b525354665848655c0dd"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "polynomialutils_5::@b525354665848655c0dd"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "polynomialutils_6::@b525354665848655c0dd"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "polynomialutils_7::@b525354665848655c0dd"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "polynomialutils_8::@b525354665848655c0dd"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "polynomialutils_9::@b525354665848655c0dd"
+		}
+	],
+	"id" : "polynomialutils::@b525354665848655c0dd",
+	"name" : "polynomialutils",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen/unsupported/test",
+		"source" : "dependencies/eigen/unsupported/test"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,757 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"dependencies/eigen/doc/CMakeLists.txt",
+			"dependencies/eigen/doc/examples/CMakeLists.txt",
+			"dependencies/eigen/doc/special_examples/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 25,
+				"parent" : 73
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "CustomizingEigen_Inheritance::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Cwise_erf::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "Cwise_erfc::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "Cwise_lgamma::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "DenseBase_middleCols_int::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "DenseBase_middleRows_int::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "DenseBase_template_int_middleCols::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "DenseBase_template_int_middleRows::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "QuickStart_example::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "QuickStart_example2_dynamic::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "QuickStart_example2_fixed::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "TemplateKeyword_flexible::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "TemplateKeyword_simple::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "TutorialInplaceLU::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "TutorialLinAlgComputeTwice::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "TutorialLinAlgExComputeSolveError::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "TutorialLinAlgExSolveColPivHouseholderQR::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "TutorialLinAlgExSolveLDLT::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "TutorialLinAlgInverseDeterminant::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "TutorialLinAlgRankRevealing::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "TutorialLinAlgSVDSolve::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "TutorialLinAlgSelfAdjointEigenSolver::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "TutorialLinAlgSetThreshold::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "Tutorial_ArrayClass_accessors::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "Tutorial_ArrayClass_addition::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "Tutorial_ArrayClass_cwise_other::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "Tutorial_ArrayClass_interop::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "Tutorial_ArrayClass_interop_matrix::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "Tutorial_ArrayClass_mult::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "Tutorial_BlockOperations_block_assignment::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "Tutorial_BlockOperations_colrow::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "Tutorial_BlockOperations_corner::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "Tutorial_BlockOperations_print_block::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "Tutorial_BlockOperations_vector::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "Tutorial_PartialLU_solve::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 38,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 39,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 40,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 41,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_colwise::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 42,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_maxnorm::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 43,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_reductions_bool::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 44,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_reductions_norm::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 45,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 46,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_rowwise::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 47,
+			"id" : "Tutorial_ReductionsVisitorsBroadcasting_visitors::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 48,
+			"id" : "Tutorial_simple_example_dynamic_size::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 49,
+			"id" : "Tutorial_simple_example_fixed_size::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 50,
+			"id" : "class_Block::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 51,
+			"id" : "class_CwiseBinaryOp::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 52,
+			"id" : "class_CwiseUnaryOp::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 53,
+			"id" : "class_CwiseUnaryOp_ptrfun::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 54,
+			"id" : "class_FixedBlock::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 55,
+			"id" : "class_FixedReshaped::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 56,
+			"id" : "class_FixedVectorBlock::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 57,
+			"id" : "class_Reshaped::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 58,
+			"id" : "class_VectorBlock::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 59,
+			"id" : "function_taking_eigenbase::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 60,
+			"id" : "function_taking_ref::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 61,
+			"id" : "make_circulant::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 62,
+			"id" : "make_circulant2::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 63,
+			"id" : "matrixfree_cg::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 64,
+			"id" : "nullary_indexing::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 65,
+			"id" : "tut_arithmetic_add_sub::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 66,
+			"id" : "tut_arithmetic_dot_cross::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 67,
+			"id" : "tut_arithmetic_matrix_mul::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 68,
+			"id" : "tut_arithmetic_redux_basic::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 69,
+			"id" : "tut_arithmetic_scalar_mul_div::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 70,
+			"id" : "tut_matrix_coefficient_accessors::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "tut_matrix_resize::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 72,
+			"id" : "tut_matrix_resize_fixed_size::@419ef014e15450b86bf6"
+		},
+		{
+			"backtrace" : 74,
+			"id" : "random_cpp11::@e8e7cdba14ecb4346930"
+		}
+	],
+	"id" : "all_examples::@4bc3092a9452d10840d8",
+	"name" : "all_examples",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen/doc",
+		"source" : "dependencies/eigen/doc"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

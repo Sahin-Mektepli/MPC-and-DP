@@ -1,0 +1,157 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ei_add_test",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"dependencies/eigen/cmake/EigenTesting.cmake",
+			"dependencies/eigen/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 195,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "mapped_matrix_1::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "mapped_matrix_2::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "mapped_matrix_3::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "mapped_matrix_4::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "mapped_matrix_5::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "mapped_matrix_11::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "mapped_matrix_6::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "mapped_matrix_7::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "mapped_matrix_8::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "mapped_matrix_9::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "mapped_matrix_10::@a5b452242de2d0505f30"
+		}
+	],
+	"id" : "mapped_matrix::@a5b452242de2d0505f30",
+	"name" : "mapped_matrix",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen/test",
+		"source" : "dependencies/eigen/test"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

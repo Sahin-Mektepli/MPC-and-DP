@@ -1,0 +1,177 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ei_add_test",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"dependencies/eigen/cmake/EigenTesting.cmake",
+			"dependencies/eigen/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 190,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "adjoint_1::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "adjoint_2::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "adjoint_3::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "adjoint_4::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "adjoint_5::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "adjoint_6::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "adjoint_8::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "adjoint_9::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "adjoint_10::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "adjoint_11::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "adjoint_12::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "adjoint_7::@a5b452242de2d0505f30"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "adjoint_13::@a5b452242de2d0505f30"
+		}
+	],
+	"id" : "adjoint::@a5b452242de2d0505f30",
+	"name" : "adjoint",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen/test",
+		"source" : "dependencies/eigen/test"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
