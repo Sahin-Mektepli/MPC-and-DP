@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/build/dependencies/cryptopp-cmake/test/cmake_install.cmake")
+  include("/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/dependencies/cryptopp-cmake/test/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/build/dependencies/cryptopp-cmake/cryptopp/cmake_install.cmake")
+  include("/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/dependencies/cryptopp-cmake/cryptopp/cmake_install.cmake")
 endif()
 

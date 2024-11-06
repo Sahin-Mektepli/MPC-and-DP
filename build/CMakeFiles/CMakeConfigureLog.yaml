@@ -17163,3 +17163,1245 @@ events:
       variable: "run_result_unused"
       cached: true
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-3uVEoP"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-3uVEoP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O3"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-3uVEoP'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2d72a
+        [1/2] /usr/bin/clang++ -DCOMPILER_SUPPORT_std=cpp03  -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -std=c++03 -MD -MT CMakeFiles/cmTC_2d72a.dir/src.cxx.o -MF CMakeFiles/cmTC_2d72a.dir/src.cxx.o.d -o CMakeFiles/cmTC_2d72a.dir/src.cxx.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-3uVEoP/src.cxx'
+        [2/2] : && /usr/bin/clang++ -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_2d72a.dir/src.cxx.o -o cmTC_2d72a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:210 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_0660f
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_0660f.dir/arch.c.o -MF CMakeFiles/cmTC_0660f.dir/arch.c.o.d -o CMakeFiles/cmTC_0660f.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_0660f.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_0660f.dir/arch.c.o -MF CMakeFiles/cmTC_0660f.dir/arch.c.o.d -o CMakeFiles/cmTC_0660f.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:211 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_e4daf
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_e4daf.dir/arch.c.o -MF CMakeFiles/cmTC_e4daf.dir/arch.c.o.d -o CMakeFiles/cmTC_e4daf.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_e4daf.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_e4daf.dir/arch.c.o -MF CMakeFiles/cmTC_e4daf.dir/arch.c.o.d -o CMakeFiles/cmTC_e4daf.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:212 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2efd3
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_2efd3.dir/arch.c.o -MF CMakeFiles/cmTC_2efd3.dir/arch.c.o.d -o CMakeFiles/cmTC_2efd3.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_2efd3.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_2efd3.dir/arch.c.o -MF CMakeFiles/cmTC_2efd3.dir/arch.c.o.d -o CMakeFiles/cmTC_2efd3.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:213 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_0473b
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_0473b.dir/arch.c.o -MF CMakeFiles/cmTC_0473b.dir/arch.c.o.d -o CMakeFiles/cmTC_0473b.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_0473b.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_0473b.dir/arch.c.o -MF CMakeFiles/cmTC_0473b.dir/arch.c.o.d -o CMakeFiles/cmTC_0473b.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:214 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_b3e8e
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_b3e8e.dir/arch.c.o -MF CMakeFiles/cmTC_b3e8e.dir/arch.c.o.d -o CMakeFiles/cmTC_b3e8e.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_b3e8e.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_b3e8e.dir/arch.c.o -MF CMakeFiles/cmTC_b3e8e.dir/arch.c.o.d -o CMakeFiles/cmTC_b3e8e.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:215 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_502f3
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_502f3.dir/arch.c.o -MF CMakeFiles/cmTC_502f3.dir/arch.c.o.d -o CMakeFiles/cmTC_502f3.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_502f3.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_502f3.dir/arch.c.o -MF CMakeFiles/cmTC_502f3.dir/arch.c.o.d -o CMakeFiles/cmTC_502f3.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:216 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_e494d
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_e494d.dir/arch.c.o -MF CMakeFiles/cmTC_e494d.dir/arch.c.o.d -o CMakeFiles/cmTC_e494d.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_e494d.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_e494d.dir/arch.c.o -MF CMakeFiles/cmTC_e494d.dir/arch.c.o.d -o CMakeFiles/cmTC_e494d.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:217 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_cf65c
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_cf65c.dir/arch.c.o -MF CMakeFiles/cmTC_cf65c.dir/arch.c.o.d -o CMakeFiles/cmTC_cf65c.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_cf65c.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_cf65c.dir/arch.c.o -MF CMakeFiles/cmTC_cf65c.dir/arch.c.o.d -o CMakeFiles/cmTC_cf65c.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:218 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2db39
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_2db39.dir/arch.c.o -MF CMakeFiles/cmTC_2db39.dir/arch.c.o.d -o CMakeFiles/cmTC_2db39.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_2db39.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_2db39.dir/arch.c.o -MF CMakeFiles/cmTC_2db39.dir/arch.c.o.d -o CMakeFiles/cmTC_2db39.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-6YXLfQ"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-6YXLfQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O3"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-6YXLfQ'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_c71dc
+        [1/2] /usr/bin/clang++ -DCOMPILER_SUPPORT_std=cpp03  -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -std=c++03 -MD -MT CMakeFiles/cmTC_c71dc.dir/src.cxx.o -MF CMakeFiles/cmTC_c71dc.dir/src.cxx.o.d -o CMakeFiles/cmTC_c71dc.dir/src.cxx.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-6YXLfQ/src.cxx'
+        [2/2] : && /usr/bin/clang++ -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c71dc.dir/src.cxx.o -o cmTC_c71dc   && :
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:210 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_3256d
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_3256d.dir/arch.c.o -MF CMakeFiles/cmTC_3256d.dir/arch.c.o.d -o CMakeFiles/cmTC_3256d.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_3256d.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_3256d.dir/arch.c.o -MF CMakeFiles/cmTC_3256d.dir/arch.c.o.d -o CMakeFiles/cmTC_3256d.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:211 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_1f81d
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_1f81d.dir/arch.c.o -MF CMakeFiles/cmTC_1f81d.dir/arch.c.o.d -o CMakeFiles/cmTC_1f81d.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_1f81d.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_1f81d.dir/arch.c.o -MF CMakeFiles/cmTC_1f81d.dir/arch.c.o.d -o CMakeFiles/cmTC_1f81d.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:212 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_38f76
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_38f76.dir/arch.c.o -MF CMakeFiles/cmTC_38f76.dir/arch.c.o.d -o CMakeFiles/cmTC_38f76.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_38f76.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_38f76.dir/arch.c.o -MF CMakeFiles/cmTC_38f76.dir/arch.c.o.d -o CMakeFiles/cmTC_38f76.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:213 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_d3b04
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_d3b04.dir/arch.c.o -MF CMakeFiles/cmTC_d3b04.dir/arch.c.o.d -o CMakeFiles/cmTC_d3b04.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_d3b04.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_d3b04.dir/arch.c.o -MF CMakeFiles/cmTC_d3b04.dir/arch.c.o.d -o CMakeFiles/cmTC_d3b04.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:214 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_7355e
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_7355e.dir/arch.c.o -MF CMakeFiles/cmTC_7355e.dir/arch.c.o.d -o CMakeFiles/cmTC_7355e.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_7355e.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_7355e.dir/arch.c.o -MF CMakeFiles/cmTC_7355e.dir/arch.c.o.d -o CMakeFiles/cmTC_7355e.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:215 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2f640
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_2f640.dir/arch.c.o -MF CMakeFiles/cmTC_2f640.dir/arch.c.o.d -o CMakeFiles/cmTC_2f640.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_2f640.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_2f640.dir/arch.c.o -MF CMakeFiles/cmTC_2f640.dir/arch.c.o.d -o CMakeFiles/cmTC_2f640.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:216 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_4daaf
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_4daaf.dir/arch.c.o -MF CMakeFiles/cmTC_4daaf.dir/arch.c.o.d -o CMakeFiles/cmTC_4daaf.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_4daaf.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_4daaf.dir/arch.c.o -MF CMakeFiles/cmTC_4daaf.dir/arch.c.o.d -o CMakeFiles/cmTC_4daaf.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:217 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_73403
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_73403.dir/arch.c.o -MF CMakeFiles/cmTC_73403.dir/arch.c.o.d -o CMakeFiles/cmTC_73403.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_73403.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_73403.dir/arch.c.o -MF CMakeFiles/cmTC_73403.dir/arch.c.o.d -o CMakeFiles/cmTC_73403.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:218 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_5f758
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_5f758.dir/arch.c.o -MF CMakeFiles/cmTC_5f758.dir/arch.c.o.d -o CMakeFiles/cmTC_5f758.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_5f758.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_5f758.dir/arch.c.o -MF CMakeFiles/cmTC_5f758.dir/arch.c.o.d -o CMakeFiles/cmTC_5f758.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-MHnHuh"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-MHnHuh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O3"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-MHnHuh'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_d0e14
+        [1/2] /usr/bin/clang++ -DCOMPILER_SUPPORT_std=cpp03  -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -std=c++03 -MD -MT CMakeFiles/cmTC_d0e14.dir/src.cxx.o -MF CMakeFiles/cmTC_d0e14.dir/src.cxx.o.d -o CMakeFiles/cmTC_d0e14.dir/src.cxx.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeScratch/TryCompile-MHnHuh/src.cxx'
+        [2/2] : && /usr/bin/clang++ -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_d0e14.dir/src.cxx.o -o cmTC_d0e14   && :
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:210 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_009e7
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_009e7.dir/arch.c.o -MF CMakeFiles/cmTC_009e7.dir/arch.c.o.d -o CMakeFiles/cmTC_009e7.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_009e7.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_009e7.dir/arch.c.o -MF CMakeFiles/cmTC_009e7.dir/arch.c.o.d -o CMakeFiles/cmTC_009e7.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:211 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_1a9c6
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_1a9c6.dir/arch.c.o -MF CMakeFiles/cmTC_1a9c6.dir/arch.c.o.d -o CMakeFiles/cmTC_1a9c6.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_1a9c6.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_1a9c6.dir/arch.c.o -MF CMakeFiles/cmTC_1a9c6.dir/arch.c.o.d -o CMakeFiles/cmTC_1a9c6.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:212 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_3ed3f
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_3ed3f.dir/arch.c.o -MF CMakeFiles/cmTC_3ed3f.dir/arch.c.o.d -o CMakeFiles/cmTC_3ed3f.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_3ed3f.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_3ed3f.dir/arch.c.o -MF CMakeFiles/cmTC_3ed3f.dir/arch.c.o.d -o CMakeFiles/cmTC_3ed3f.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:213 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_d85cd
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_d85cd.dir/arch.c.o -MF CMakeFiles/cmTC_d85cd.dir/arch.c.o.d -o CMakeFiles/cmTC_d85cd.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_d85cd.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_d85cd.dir/arch.c.o -MF CMakeFiles/cmTC_d85cd.dir/arch.c.o.d -o CMakeFiles/cmTC_d85cd.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:214 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_c6e2c
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_c6e2c.dir/arch.c.o -MF CMakeFiles/cmTC_c6e2c.dir/arch.c.o.d -o CMakeFiles/cmTC_c6e2c.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_c6e2c.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_c6e2c.dir/arch.c.o -MF CMakeFiles/cmTC_c6e2c.dir/arch.c.o.d -o CMakeFiles/cmTC_c6e2c.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:215 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_732a1
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_732a1.dir/arch.c.o -MF CMakeFiles/cmTC_732a1.dir/arch.c.o.d -o CMakeFiles/cmTC_732a1.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_732a1.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_732a1.dir/arch.c.o -MF CMakeFiles/cmTC_732a1.dir/arch.c.o.d -o CMakeFiles/cmTC_732a1.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:216 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_b15f7
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_b15f7.dir/arch.c.o -MF CMakeFiles/cmTC_b15f7.dir/arch.c.o.d -o CMakeFiles/cmTC_b15f7.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_b15f7.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_b15f7.dir/arch.c.o -MF CMakeFiles/cmTC_b15f7.dir/arch.c.o.d -o CMakeFiles/cmTC_b15f7.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:217 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_0a3df
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_0a3df.dir/arch.c.o -MF CMakeFiles/cmTC_0a3df.dir/arch.c.o.d -o CMakeFiles/cmTC_0a3df.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_0a3df.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_0a3df.dir/arch.c.o -MF CMakeFiles/cmTC_0a3df.dir/arch.c.o.d -o CMakeFiles/cmTC_0a3df.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:218 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_027ee
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_027ee.dir/arch.c.o -MF CMakeFiles/cmTC_027ee.dir/arch.c.o.d -o CMakeFiles/cmTC_027ee.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        FAILED: CMakeFiles/cmTC_027ee.dir/arch.c.o 
+        /usr/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_027ee.dir/arch.c.o -MF CMakeFiles/cmTC_027ee.dir/arch.c.o.d -o CMakeFiles/cmTC_027ee.dir/arch.c.o -c '/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c'
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...

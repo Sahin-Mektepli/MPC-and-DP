@@ -5,7 +5,7 @@
 
 # Configuration directories and files
 SourceDirectory: /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/dependencies/eigen
-BuildDirectory: /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/build/dependencies/eigen
+BuildDirectory: /Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/dependencies/eigen
 
 # Where to place the cost data store
 CostDataFile: 
@@ -58,9 +58,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: /usr/bin/git
+UpdateCommand: 
 UpdateOptions: 
-UpdateType: git
+UpdateType: 
 
 # Compiler info
 Compiler: /usr/bin/clang++

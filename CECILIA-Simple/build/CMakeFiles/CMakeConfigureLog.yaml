@@ -3623,3 +3623,430 @@ events:
       variable: "run_result_unused"
       cached: true
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "dependencies/eigen/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeScratch/TryCompile-d7B83F"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeScratch/TryCompile-d7B83F"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O3"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeScratch/TryCompile-d7B83F'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98d50/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_98d50.dir/build.make CMakeFiles/cmTC_98d50.dir/build
+        Building CXX object CMakeFiles/cmTC_98d50.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -std=c++03 -MD -MT CMakeFiles/cmTC_98d50.dir/src.cxx.o -MF CMakeFiles/cmTC_98d50.dir/src.cxx.o.d -o CMakeFiles/cmTC_98d50.dir/src.cxx.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeScratch/TryCompile-d7B83F/src.cxx"
+        Linking CXX executable cmTC_98d50
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98d50.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_98d50.dir/src.cxx.o -o cmTC_98d50 
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:210 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b055d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b055d.dir/build.make CMakeFiles/cmTC_b055d.dir/build
+        Building C object CMakeFiles/cmTC_b055d.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_b055d.dir/arch.c.o -MF CMakeFiles/cmTC_b055d.dir/arch.c.o.d -o CMakeFiles/cmTC_b055d.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_b055d.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_b055d/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:211 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bfb7b/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bfb7b.dir/build.make CMakeFiles/cmTC_bfb7b.dir/build
+        Building C object CMakeFiles/cmTC_bfb7b.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_bfb7b.dir/arch.c.o -MF CMakeFiles/cmTC_bfb7b.dir/arch.c.o.d -o CMakeFiles/cmTC_bfb7b.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_bfb7b.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_bfb7b/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:212 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a7a9d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a7a9d.dir/build.make CMakeFiles/cmTC_a7a9d.dir/build
+        Building C object CMakeFiles/cmTC_a7a9d.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_a7a9d.dir/arch.c.o -MF CMakeFiles/cmTC_a7a9d.dir/arch.c.o.d -o CMakeFiles/cmTC_a7a9d.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_a7a9d.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_a7a9d/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:213 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fcce1/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fcce1.dir/build.make CMakeFiles/cmTC_fcce1.dir/build
+        Building C object CMakeFiles/cmTC_fcce1.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_fcce1.dir/arch.c.o -MF CMakeFiles/cmTC_fcce1.dir/arch.c.o.d -o CMakeFiles/cmTC_fcce1.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_fcce1.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_fcce1/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:214 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38b8e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_38b8e.dir/build.make CMakeFiles/cmTC_38b8e.dir/build
+        Building C object CMakeFiles/cmTC_38b8e.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_38b8e.dir/arch.c.o -MF CMakeFiles/cmTC_38b8e.dir/arch.c.o.d -o CMakeFiles/cmTC_38b8e.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_38b8e.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_38b8e/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:215 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a9f25/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a9f25.dir/build.make CMakeFiles/cmTC_a9f25.dir/build
+        Building C object CMakeFiles/cmTC_a9f25.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_a9f25.dir/arch.c.o -MF CMakeFiles/cmTC_a9f25.dir/arch.c.o.d -o CMakeFiles/cmTC_a9f25.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_a9f25.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_a9f25/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:216 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_23572/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_23572.dir/build.make CMakeFiles/cmTC_23572.dir/build
+        Building C object CMakeFiles/cmTC_23572.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_23572.dir/arch.c.o -MF CMakeFiles/cmTC_23572.dir/arch.c.o.d -o CMakeFiles/cmTC_23572.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_23572.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_23572/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:217 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7b413/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7b413.dir/build.make CMakeFiles/cmTC_7b413.dir/build
+        Building C object CMakeFiles/cmTC_7b413.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_7b413.dir/arch.c.o -MF CMakeFiles/cmTC_7b413.dir/arch.c.o.d -o CMakeFiles/cmTC_7b413.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_7b413.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_7b413/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "dependencies/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:182 (target_architecture)"
+      - "dependencies/cryptopp-cmake/cryptopp/CMakeLists.txt:218 (check_target_architecture)"
+    directories:
+      source: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53a24/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_53a24.dir/build.make CMakeFiles/cmTC_53a24.dir/build
+        Building C object CMakeFiles/cmTC_53a24.dir/arch.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -MD -MT CMakeFiles/cmTC_53a24.dir/arch.c.o -MF CMakeFiles/cmTC_53a24.dir/arch.c.o.d -o CMakeFiles/cmTC_53a24.dir/arch.c.o -c "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c"
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:7:6: error: cmake_ARCH arm64
+        #    error cmake_ARCH arm64
+             ^
+        /Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/build/arch.c:33:2: error: cmake_ARCH unknown
+        #error cmake_ARCH unknown
+         ^
+        2 errors generated.
+        make[2]: *** [CMakeFiles/cmTC_53a24.dir/arch.c.o] Error 1
+        make[1]: *** [cmTC_53a24/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...

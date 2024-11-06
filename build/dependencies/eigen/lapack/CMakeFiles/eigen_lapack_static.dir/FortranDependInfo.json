@@ -5,9 +5,9 @@
 	"compiler-simulate-id" : "",
 	"config" : "Debug",
 	"cxx-modules" : {},
-	"dir-cur-bld" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/build/dependencies/eigen/lapack",
+	"dir-cur-bld" : "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/dependencies/eigen/lapack",
 	"dir-cur-src" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple/dependencies/eigen/lapack",
-	"dir-top-bld" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/build",
+	"dir-top-bld" : "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build",
 	"dir-top-src" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/CECILIA-Simple",
 	"exports" : [],
 	"include-dirs" : 
@@ -17,7 +17,7 @@
 	],
 	"language" : "Fortran",
 	"linked-target-dirs" : [],
-	"module-dir" : "/Users/dulumrae/Desktop/K\u00fcbra Hoca veya A\u011f G\u00fcvenli\u011fi/Almanc\u0131lar/Cecilia/build/dependencies/eigen/lapack",
+	"module-dir" : "/Users/dulumrae/Downloads/ge\u00e7iciCecilia/MPC-and-DP/build/dependencies/eigen/lapack",
 	"submodule-ext" : ".smod",
 	"submodule-sep" : "@"
 }

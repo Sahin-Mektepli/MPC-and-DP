@@ -69,7 +69,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/build/dependencies/eigen/unsupported/Eigen/CXX11/cmake_install.cmake")
+  include("/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build/dependencies/eigen/unsupported/Eigen/CXX11/cmake_install.cmake")
 
 endif()
 

@@ -7,7 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/.git/modules/dependencies/cryptopp-cmake/HEAD"
+  "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/.git/HEAD"
+  "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/.git/refs/heads/main"
   "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple/CMakeLists.txt"
   "CMakeFiles/3.27.7/CMakeASMCompiler.cmake"
   "CMakeFiles/3.27.7/CMakeCCompiler.cmake"

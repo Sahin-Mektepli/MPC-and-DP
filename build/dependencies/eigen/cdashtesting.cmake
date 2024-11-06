@@ -1,6 +1,6 @@
 
 set(CTEST_SOURCE_DIRECTORY  "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/CECILIA-Simple")
-set(CTEST_BINARY_DIRECTORY  "/Users/dulumrae/Desktop/Kübra Hoca veya Ağ Güvenliği/Almancılar/Cecilia/build")
+set(CTEST_BINARY_DIRECTORY  "/Users/dulumrae/Downloads/geçiciCecilia/MPC-and-DP/build")
 set(CTEST_CMAKE_GENERATOR   "Ninja")
 set(CTEST_BUILD_NAME        "darwin-23.5.0-clang++-15.0.0-sse2-64bit")
 set(CTEST_SITE              "emin-2.fritz.box")

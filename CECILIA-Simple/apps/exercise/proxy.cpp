@@ -222,7 +222,7 @@ int main(int argc, char* argv[]) {
     //const int numCols = 50;
     
     const int numRows = 50000; // bu mütegayyir olacak.
-    const int numCols = 144;
+    const int numCols = 140;
 
     double** X = new double*[numRows]; // Matrix X
     for (int i = 0; i < numRows; ++i) {
