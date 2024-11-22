@@ -2648,9 +2648,14 @@ uint64_t **add_noise(Party *const proxy, uint64_t **numbers, double scale, int s
 //         return theta_shares;
 //     }
 // }
+
+
+
+
+
 uint64_t* GradientDescent(Party *const proxy, uint64_t **X, uint64_t *y, uint64_t* theta_shares, int const r, int const n, double const learning_rate, double epsilon, int iterations){ //sanırım burada vektör kullanmak zorunda kalacağım.
-    uint32_t param_r[1] = {(uint32_t)r}; //BU DAHA SONRA SİLİNECEK.
-    uint32_t param_n[1] = {(uint32_t)n}; //BU DAHA SONRA SİLİNECEK.
+    uint32_t param_r[1] = {(uint32_t)r}; 
+    uint32_t param_n[1] = {(uint32_t)n}; 
     
     //bazı 2d array'lerin transpozunu almak gerekecek.
     auto T = [](uint64_t **matrix, int r, int n){
@@ -2675,13 +2680,11 @@ uint64_t* GradientDescent(Party *const proxy, uint64_t **X, uint64_t *y, uint64_
         double rs[n];             // n'ye tebdil
         double learning_rates[n]; // n'ye tebdil
         double minus_ones_n[n];
+        
+        double over_eights[n]; //to replace the dividing by 8 part
         for(int i=0; i<r; i++){
             minus_ones[i] = -1;
             halves[i] = 0.5;
-            //eights[i] = 8; DÜZELTİLDİ.
-            //twos[i] = 2;
-            //rs[i] = r;
-            //learning_rates[i] = learning_rate;
         }
         for(int i=0; i<n; i++){
             eights[i] = 8;
@@ -2689,6 +2692,8 @@ uint64_t* GradientDescent(Party *const proxy, uint64_t **X, uint64_t *y, uint64_
             rs[i] = r;
             learning_rates[i] = learning_rate;
             minus_ones_n[i] = -1;
+            
+            over_eights[i] = 0.125;
         }
         uint64_t *minus_one_shares = proxy->CreateShare(minus_ones, r);
         uint64_t *half_shares = proxy->CreateShare(halves, r);
@@ -2697,194 +2702,76 @@ uint64_t* GradientDescent(Party *const proxy, uint64_t **X, uint64_t *y, uint64_
         uint64_t *r_shares_n = proxy->CreateShare(rs, n);                         //R'DEN N'YE TEBDİL EDİLDİ.
         uint64_t *learning_rate_shares_n = proxy->CreateShare(learning_rates, n); //R'DEN N'YE TEBDİL EDİLDİ.
         uint64_t *minus_one_shares_n = proxy->CreateShare(minus_ones, n);         //N olarak eklendi, yoğudu
-
+        
+        uint64_t *over_eight_shares= proxy->CreateShare(over_eights, n);
         double d = n-1;
         double sensitivity = (3 * d) + 0.25 * (n * n); // calculates the sensitivity with the number of features
         uint64_t sens_share = proxy->CreateShare(sensitivity); //müstakil bir sayı ve defaatle kullanılacak
 
         double scale_double = sensitivity / epsilon * iterations;  // calculate beta, lokal hesaplanabilir bu, gizli bir yanı yok ki.
         
-        //scale_double = 0.0;
         uint32_t scale = uint32_t(ConvertToUint64(scale_double));
-
-        // = new uint64_t[n]; //BUNLARIN ŞEKLİNİN NE OLMSAI GEREKTİĞİNİ ŞU AN KESTİREMİYORUM, İMPLEMANTASYONA BAĞLI.
-       
-
-        // uint64_t** noise2 = new uint64_t *[r];
-        // for (int i = 0; i < r; ++i) {
-        //     noise2[i] = new uint64_t [r];
-        // }
+        
         uint64_t *curiousity = new uint64_t[n];
         for(int i=0; i<iterations; i++){
-            //cout << "for loop'a girdik" << endl;
-            //term1 = np.matmul(X.T, (0.5 - y)) + noise1
             uint64_t **X_transpose = T(X, r, n); //X.T tamam
-            std::cout<<"transpose\n";
 
             proxy->SendBytes(coreVectorisedMultiply, param_r, 1);
-            std::cout <<"send byte done\n";
-
             uint64_t *minus_y_shares = Multiply(proxy, y, minus_one_shares, r);
-            std::cout <<"vector mult done\n";
 
             uint64_t *half_minus_y_shares = Add(proxy, minus_y_shares, half_shares, r);
-            //cout << "0.5 -y işi tamam" << endl;
             
             uint32_t param_vec_mult[2] = {uint32_t(n),uint32_t(r)};
             proxy->SendBytes(coreMatrixVectorMultiply, param_vec_mult, 2);
             uint64_t *term1_shares = MatrixVectorMultiply(proxy,X_transpose, half_minus_y_shares, n, r);
 
-            std::cout << "matrix vector mult done\n";
-
-            //*********************************** Noise1 ekleniyor
-            //uint64_t *term1_before_noise = Reconstruct(proxy, term1_shares, n);
-
-            //uint32_t param_noise[2] = {uint32_t(scale),uint32_t(n)};
-            //proxy->SendBytes(lgAddNoiseNew, param_noise, 2);
-            //uint64_t *noise1_shares = add_noise_new(proxy, nullptr, scale, n); BU FONKSİYONU BOZDUM, GÜRÜLTÜ DÖNÜDÜRYOR
-            //term1_shares = Add(proxy, term1_shares, noise1_shares, n);
-            
-            
-            
-            //uint32_t param_noise[2] = {uint32_t(scale),uint32_t(n)};
-            //proxy->SendBytes(lgAddNoiseNew, param_noise, 2);
-            //cout << "term1 will have noise" << endl;
 
             uint32_t param_scale[2] = {uint32_t(n), scale}; //scale'i zaten tyepcast ettim.
 
             proxy->SendBytes(lgAddNoise, param_scale, 2);
             term1_shares=add_noise(proxy,term1_shares,uint32_t(n), scale); //burada n'yi typecast etmenin bir gereği olmasa gerek
 
-            //cout << "term1 got noise" << endl;
-            
-
-            // ****************************************
-            //uint64_t *term1_for_debug = Reconstruct(proxy, term1_shares, n);
-            /* cout << "FOR TERM1-----------------------------" << endl << endl << endl;
-            cout << "before noise: "<< ConvertToDouble(term1_before_noise[0]) << " after noise: " << ConvertToDouble(term1_for_debug[0]) << endl;
-            cout << "before noise: "<< ConvertToDouble(term1_before_noise[1]) << " after noise: " << ConvertToDouble(term1_for_debug[1]) << endl;
-            cout << "before noise: "<< ConvertToDouble(term1_before_noise[2]) << " after noise: " << ConvertToDouble(term1_for_debug[2]) << endl;
-            cout << "FOR TERM1------------------------------" << endl << endl << endl; */
-
-            //uint64_t *term1_shares = multiplyMatrixVector(X_transpose, half_minus_y_shares, n, r); //r ve n ters çünkü X transpozun şekli bi' garip
-            //term1 -> (n,1) şeklinde
-            //term2 = np.matmul(X.T, X) / 8 + noise2 
-            //cout << "Xt * (0.5-y) zıkkımı tamam" << endl;
-            //uint64_t **X_transpose_X = multiplyMatrices(T(X, r, n), X, n, r, n); //bu n ve r'ler İNANILMAZ KARIŞTI.
 
             uint32_t param_mult[3] = {uint32_t(n),uint32_t(r),uint32_t(n)};
             proxy->SendBytes(coreMatrixMatrixMultiply, param_mult, 3);
-            //cout<<"deneme"<<endl;
             uint64_t **X_transpose_X = MatrixMatrixMultiply(proxy, T(X,r,n), X, n, r, n);
 
-            //cout << "XtX çarpımı tamam" << endl;
-            double *XTX_debug = ConvertToDouble(Reconstruct(proxy, X_transpose_X[0], n),n);
-            /* cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" << endl;
-            cout << XTX_debug[0] << endl;
-            cout << XTX_debug[1] << endl;
-            cout << XTX_debug[2] << endl;
-            cout << XTX_debug[3] << endl;
-            cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" << endl; */
-
-
-            // Xt * X --> (n,n) şeklinde
-            //PS. X_transpose'u yeniden kullanmaya çalıştığımda yanlış sonuç alıyordum, o yüzden burada yeniden hesapladım
-            //Dilin nasıl çalıştığını daha iyi takip eden biri bunu optimize etmekte zorlanmayacaktır.
-
-            //X.T*X'in her elemanını 8'e bölmek lazım:
-            //satır satır vektör muamelesi yapmak kabil.
-            //uint64_t **term2_shares = new uint64_t*[r]; //BU N UZUNLUĞUNDA OLMALI!!!
-
-            std::cout <<"start with the noise\n";
 
             uint64_t **term2_shares = new uint64_t*[n]; //BU N UZUNLUĞUNDA OLMALI!!!
             for(int j=0; j<n; j++){ //X.T*X'in her satırı için R'YE KADARDI N'YE ÇEVİRDİM.
-                proxy->SendBytes(coreVectorisedDivide, param_n, 1);
-                term2_shares[j] = Divide(proxy, X_transpose_X[j], eight_shares_n, n); //o satırı 8'e böl N'YE DEĞİŞTİRİLDİ
+                proxy->SendBytes(coreVectorisedMultiply, param_n, 1);
+                term2_shares[j] = Multiply(proxy, X_transpose_X[j], over_eight_shares, n); //o satırı 8'e böl N'YE DEĞİŞTİRİLDİ
             }
-            //*********************************** Noise2 ekleniyor
-            //double *term2_firstline_debug = ConvertToDouble(Reconstruct(proxy, term2_shares[0], n),n); //TERM2'NİN SADECE İLK SATIRI!!!!!!!!
             
             for(int satr = 0; satr< n; ++satr){
                 proxy->SendBytes(lgAddNoise, param_scale, 2); //ADD NOISE İÇÜN
                 term2_shares[satr] = add_noise(proxy, term2_shares[satr], uint32_t(n), scale);
             }
 
-            std::cout <<"enough with the noise\n";
-
-            //double *term2_noisy_first_line_debug = ConvertToDouble(Reconstruct(proxy, term2_shares[0], n),n);
-            /* cout << "TERM2*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-" << endl;
-            cout << "before noise: "<<term2_firstline_debug[0] << " after noise: "<< term2_noisy_first_line_debug[0] <<endl;
-            cout << "before noise: "<<term2_firstline_debug[1] << " after noise: "<< term2_noisy_first_line_debug[1] <<endl;
-            cout << "before noise: "<<term2_firstline_debug[2] << " after noise: "<< term2_noisy_first_line_debug[2] <<endl;
-            cout << "before noise: "<<term2_firstline_debug[3] << " after noise: "<< term2_noisy_first_line_debug[3] <<endl;
-            cout << "TERM2*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-" << endl; */
-            //uint32_t param_n2[2] = {uint32_t(n),uint32_t(n)};
-            //proxy->SendBytes(coreAddNoiseMatrix, param_n2, 2);
-            //term2_shares=add_noise(proxy,term2_shares,scale,n,n);
-
-
-            
 
 
 
-
-
-
-            // ********************************************************************
-            //uint64_t *theta_reconst = Reconstruct(proxy, theta_shares, n);
-            /* cout << "THEATA------------------------------THEATA" << endl;
-            cout << ConvertToDouble(theta_reconst[0]) << endl;
-            cout << ConvertToDouble(theta_reconst[1]) << endl;
-            cout << ConvertToDouble(theta_reconst[2]) << endl;
-            cout << ConvertToDouble(theta_reconst[3]) << endl;
-            cout << ConvertToDouble(theta_reconst[4]) << endl;
-            cout << "THEATA------------------------------THEATA" << endl;
-
-            cout << "XtX'lerin bölünmesi zıkkımı tamam" << endl; */
-            //term2_shares = Add(term2_shares, noise2_shares); DAHA GÜRÜLTÜLERİ GETİRMEDİĞİMİZ İÇİN BIRAKIYORUM BÖYLE.
-            
 
             uint32_t param_vec_mult_for_term2_theta[2] = {uint32_t(n),uint32_t(n)};
-            //gradient = term1 + 2 * np.matmul(term2, theta) ki burada theta n elemanlı bir vektör
             proxy->SendBytes(coreMatrixVectorMultiply, param_vec_mult_for_term2_theta, 2);
             uint64_t *term2_times_theta = MatrixVectorMultiply(proxy, term2_shares, theta_shares, n, n);
-            //uint64_t *term2_times_theta = multiplyMatrixVector(term2_shares, theta_shares, n, n); //benim yazdığım lambda fonksiyonu !!!!!!!!!!
-
-            //uint64_t *term2_with_theta_for_debug = Reconstruct(proxy, term2_times_theta, n);
-            /* cout << "------------------------------term2*theta" << endl;
-            cout << ConvertToDouble(term2_with_theta_for_debug[0]) << endl;
-            cout << ConvertToDouble(term2_with_theta_for_debug[1]) << endl;
-            cout << ConvertToDouble(term2_with_theta_for_debug[2]) << endl;
-            cout << ConvertToDouble(term2_with_theta_for_debug[3]) << endl;
-            cout << "------------------------------term2*theta" << endl; */
-
 
             proxy->SendBytes(coreVectorisedMultiply, param_n, 1);
             uint64_t *double_term2_times_theta = Multiply(proxy, term2_times_theta, two_shares_n, n); //2 * np.matmul(term2, theta) N'YE TEBDİL
             uint64_t *gradient_shares = Add(proxy, term1_shares, double_term2_times_theta, n); //N'YE TEBDİL
-            //cout << "vektörize çarpımlar !!" << endl;
-            //theta -= learning_rate * (gradient / m)
+
             proxy->SendBytes(coreVectorisedDivide, param_n, 1);
             uint64_t *gradient_div_r_shares = Divide(proxy,gradient_shares, r_shares_n, n); // gradient / r N'YE TEBDİL
-            //cout << "gradient/n !!!!" << endl;
+
             proxy->SendBytes(coreVectorisedMultiply, param_n, 1);
             uint64_t *learn_rate_times_grad_div_r_shares = Multiply(proxy, learning_rate_shares_n, gradient_div_r_shares, n); //N'YE TEBDİL
-            //cout << "final" << endl;
+
             proxy->SendBytes(coreVectorisedMultiply, param_n, 1); //ya bu çok saçma ama çok güvenilir bir yöntem çıkarma yapmak için :/
             uint64_t *substract_from_theta = Multiply(proxy, learn_rate_times_grad_div_r_shares, minus_one_shares_n, n); //N'YE TEBDİL
             theta_shares = Add(proxy, theta_shares, substract_from_theta, n); //BU N'LER İLE İLGİLİ BİR HATA VAR!! KESİNLİKLE VAR!!
             
-            
-            /**
-             * bildiğim fakat henüz düzeltmediğim bir hata var:
-             * bazı vektörize işlemler satır sayısına göre iken bazıları da (özellikle theta'yı ilgilendirenler) mecburen sütun sayısı
-             * ile ilgili.
-             * ben hep "size" kullanmaya alışkın olduğum için bu yukarıdaki son satır hariç hep r dedim
-             * nerelerde n olması gerektiği çok önemli bir konu fakat kare matrislerde denerken sorun çıkmıyor :P
-             */
-            
-            curiousity = theta_shares; //bunu istediğim çıktığı döndürmek istediğim zaman, debug için kullandım.
+
+            //curiousity = theta_shares; //bunu istediğim çıktığı döndürmek istediğim zaman, debug için kullandım.
         }
 
         // delete[] noise1;
@@ -2893,6 +2780,19 @@ uint64_t* GradientDescent(Party *const proxy, uint64_t **X, uint64_t *y, uint64_
         return theta_shares;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 uint64_t* GradientDescent_Turkmen(Party *const proxy, uint64_t **X, uint64_t *y, uint64_t *theta_shares, int const r, int const n, int iterations){ //lazımdan fazlasını yazmadım.
      auto T = [](uint64_t **matrix, int r, int n){
         uint64_t** transpose = new uint64_t*[n];
